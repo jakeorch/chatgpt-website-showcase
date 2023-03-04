@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daily Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Daily Trivia Quiz</h1>
+    <p>Welcome to Daily Trivia Quiz! We offer a daily quiz consisting of three multiple-choice questions. Test your
+        knowledge on a variety of topics with our fun and engaging questions.</p>
+    <div id="quiz">
+        <h2>Today's Quiz</h2>
+        <form>
+            <fieldset>
+                <legend>Question 1:</legend>
+                <p>What is the capital of France?</p>
+                <label for="q1a1"><input type="radio" id="q1a1" name="q1" value="a1"> Paris</label><br>
+                <label for="q1a2"><input type="radio" id="q1a2" name="q1" value="a2"> London</label><br>
+                <label for="q1a3"><input type="radio" id="q1a3" name="q1" value="a3"> Rome</label>
+            </fieldset>
+            <fieldset>
+                <legend>Question 2:</legend>
+                <p>What is the largest planet in our solar system?</p>
+                <label for="q2a1"><input type="radio" id="q2a1" name="q2" value="a1"> Jupiter</label><br>
+                <label for="q2a2"><input type="radio" id="q2a2" name="q2" value="a2"> Earth</label><br>
+                <label for="q2a3"><input type="radio" id="q2a3" name="q2" value="a3"> Mars</label>
+            </fieldset>
+            <fieldset>
+                <legend>Question 3:</legend>
+                <p>Who wrote the book "To Kill a Mockingbird"?</p>
+                <label for="q3a1"><input type="radio" id="q3a1" name="q3" value="a1"> Harper Lee</label><br>
+                <label for="q3a2"><input type="radio" id="q3a2" name="q3" value="a2"> Ernest Hemingway</label><br>
+                <label for="q3a3"><input type="radio" id="q3a3" name="q3" value="a3"> J.K. Rowling</label>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="feedback"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
