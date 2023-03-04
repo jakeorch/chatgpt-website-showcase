@@ -1,0 +1,88 @@
+/* Set font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Style main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 150px);
+}
+
+#quote-container {
+  text-align: center;
+}
+
+#quote {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#new-quote {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#new-quote:hover {
+  background-color: #357a38;
+}
+
+#share-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.share-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+  background-color: #1057c2;
+}
+
+#twitter-button {
+  background-color: #1da1f2;
+}
+
+#twitter-button:hover {
+  background-color: #0c7abf;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

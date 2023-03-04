@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Letter Generator</title>
+    <style>
+        /* add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        button {
+            font-size: 1.2em;
+            padding: 0.5em 1em;
+            border: none;
+            background-color: #0077FF;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #output {
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Random Letter Generator</h1>
+    <button id="generate-btn">Generate Letter</button>
+    <div id="output"></div>
+    <script>
+        const generateBtn = document.getElementById('generate-btn');
+        const output = document.getElementById('output');
+
+        // define an array of letters to choose from
+        const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+        // attach an event listener to the generate button
+        generateBtn.addEventListener('click', () => {
+            // get a random letter from the array
+            const randomLetter = letters[Math.floor(Math.random() * letters.length)];
+            // display the letter on the page
+            output.textContent = randomLetter;
+        });
+    </script>
+</body>
+
+</html>

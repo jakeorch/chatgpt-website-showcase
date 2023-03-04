@@ -1,0 +1,59 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+/* Date and Time Styles */
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.date-time h2 {
+  margin: 0;
+}
+
+#local-time {
+  font-size: 30px;
+}
+
+#copy-to-clipboard {
+  background-color: #008cba;
+}
+
+.selected-time {
+  font-size: 20px;
+  margin-top: 10px;
+}

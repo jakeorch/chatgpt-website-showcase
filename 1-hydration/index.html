@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hydration Tracker - Track and Achieve Your Daily Water Intake Goals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hydration Tracker</h1>
+        <p>Track and Achieve Your Daily Water Intake Goals</p>
+    </header>
+    <main>
+        <div id="tracker-container">
+            <h2>Water Intake Tracker</h2>
+            <div id="progress-bar"></div>
+            <p id="progress-text"></p>
+            <form id="water-intake-form">
+                <label for="water-intake-amount">Enter your water consumption in ounces or milliliters:</label>
+                <input type="number" id="water-intake-amount" name="water-intake-amount">
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+            <div id="goal-container">
+                <h3>Set Your Daily Water Intake Goal</h3>
+                <form id="goal-form">
+                    <label for="weight">Weight (in pounds):</label>
+                    <input type="number" id="weight" name="weight">
+                    <label for="activity-level">Activity Level:</label>
+                    <select id="activity-level" name="activity-level">
+                        <option value="sedentary">Sedentary</option>
+                        <option value="moderately-active">Moderately Active</option>
+                        <option value="very-active">Very Active</option>
+                    </select>
+                    <button type="submit" id="set-goal-button">Set Goal</button>
+                </form>
+            </div>
+            <div id="log-container">
+                <h3>Water Intake Log</h3>
+                <table id="log-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Water Intake (oz)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Log entries will be dynamically generated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="resources-container">
+            <h2>Resources</h2>
+            <ul>
+                <li>Drink water with meals</li>
+                <li>Carry a water bottle with you</li>
+                <li>Set reminders to drink water</li>
+                <li>Flavor water with fruit</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Hydration Tracker - Keep Yourself Hydrated</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

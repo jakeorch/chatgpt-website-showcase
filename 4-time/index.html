@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Date and Time Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simple Date and Time Website</h1>
+    <p>This website shows the current time and date for your local timezone, as well as the time in other timezones. You
+        can select different timezones from a dropdown menu, and the time will automatically update. There is also a
+        "Copy to Clipboard" button that copies the date and time to your clipboard, making it easy to share with
+        others.</p>
+    <div>
+        <h2>Current Date and Time:</h2>
+        <p id="local-time"></p>
+        <button id="copy-to-clipboard">Copy to Clipboard</button>
+    </div>
+
+    <div>
+        <h2>Select Timezone:</h2>
+        <select id="timezone-select">
+            <option value="America/New_York">New York</option>
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="Europe/London">London</option>
+            <option value="Europe/Paris">Paris</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Australia/Sydney">Sydney</option>
+        </select>
+        <p id="selected-time"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
